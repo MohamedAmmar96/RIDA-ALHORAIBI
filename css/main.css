@@ -107,20 +107,6 @@
             align-items: center;
         }
         
-        .tools .branches {
-            color: #999;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 400;
-            margin-inline-end: 25px;
-            padding: 10px 0;
-            transition: all 0.4s ease-in-out;
-        }
-        
-        .tools .branches:hover {
-            color: var(--sub);
-        }
-        
         .currency,
         .lang {
             display: flex;
@@ -1102,14 +1088,14 @@
             position: absolute;
             top: 35%;
             transform: translateY(-50%);
-            right: -75px;
+            right: -50px;
         }
         
         .design .owl-carousel .owl-nav .owl-next {
             position: absolute;
             top: 35%;
             transform: translateY(-50%);
-            left: -75px;
+            left: -50px;
         }
         
         .design .owl-carousel .owl-dots {
@@ -1565,7 +1551,6 @@
             .top-bar {
                 justify-content: center;
             }
-            .tools .branches,
             .currency {
                 margin-inline-end: 40px;
             }
@@ -1641,6 +1626,7 @@
                 border: none;
                 outline: none;
                 z-index: 99999;
+                text-shadow: none;
                 background-color: transparent;
                 transition: all 0.4s ease-in-out;
             }
@@ -1740,7 +1726,8 @@
                 display: none;
             }
             .mo-nav .config-link {
-                color: #eee;
+                color: var(--main);
+                opacity: 1;
                 font-size: 14px;
                 font-weight: 400;
                 transition: all 0.4s ease-in-out;
